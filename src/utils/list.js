@@ -1,4 +1,4 @@
-const container = document.getElementById('scoreList')
+const container = document.getElementById('scoreList');
 
 const listMarkup = `
 <div class="score-list">
@@ -9,11 +9,10 @@ const listMarkup = `
     <li>Score 4</li>
   </ul>
 </div>
-`
-
+`;
 
 const renderScoreList = () => {
   container.insertAdjacentHTML('afterbegin', listMarkup);
-}
+};
 
-export default renderScoreList
+export default renderScoreList;

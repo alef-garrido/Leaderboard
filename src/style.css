@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -72,16 +72,17 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/*End of resets*/
 
-#pageTitle  {
-  margin: 1em 0 0 1em
+/* End of resets */
+
+#pageTitle {
+  margin: 1em 0 0 1em;
 }
 
 main {
   margin: 2em 0;
   display: grid;
-  grid-template-columns: 50 50;
+  grid-template-columns: 50% 50%;
   gap: 2em;
   align-items: center;
   justify-items: center;
@@ -92,13 +93,13 @@ main {
   grid-column-start: 1;
   grid-column-end: 2;
   width: 100%;
-} 
+}
 
 #addScore {
   grid-column-start: 2;
   grid-column-end: 3;
   width: 50%;
-} 
+}
 
 .scores {
   display: block;
@@ -119,5 +120,5 @@ form {
 }
 
 input {
-  margin-bottom:  1em;
+  margin-bottom: 1em;
 }

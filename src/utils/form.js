@@ -1,4 +1,4 @@
-const container = document.getElementById('addScore')
+const container = document.getElementById('addScore');
 
 const addForm = `
 <h2>Add your Score</h2>
@@ -7,9 +7,9 @@ const addForm = `
     <input type="text" placeholder="Your score">
     <input type="button" value="Submit">
    </form>
-`
+`;
 const renderForm = () => {
-  container.insertAdjacentHTML('beforeend', addForm)
-}
+  container.insertAdjacentHTML('beforeend', addForm);
+};
 
-export default renderForm
+export default renderForm;
