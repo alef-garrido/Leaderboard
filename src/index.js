@@ -1,7 +1,6 @@
 import './style.css';
+import renderScoreList from './list';
+import renderForm from './addScore';
 
-function start() {
-  console.log('running')
-}
-
-start()
+renderScoreList();
+renderForm();

@@ -112,3 +112,12 @@ main {
 .scores > li:nth-child(odd) {
   background-color: grey;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom:  1em;
+}
