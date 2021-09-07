@@ -74,3 +74,41 @@ select {
 }
 /*End of resets*/
 
+#pageTitle  {
+  margin: 1em 0 0 1em
+}
+
+main {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: 50 50;
+  gap: 2em;
+  align-items: center;
+  justify-items: center;
+}
+
+#scoreList {
+  margin: 0 3em;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100%;
+} 
+
+#addScore {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 50%;
+} 
+
+.scores {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 2em;
+  list-style: none;
+  border: gray solid 1px;
+}
+
+.scores > li:nth-child(odd) {
+  background-color: grey;
+}
