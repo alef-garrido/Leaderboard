@@ -1,6 +1,6 @@
 import './style.css';
-import renderScoreList from './utils/list.js';
-import renderForm from './utils/form.js';
+import renderScoreList from './utils/list';
+import renderForm from './utils/form';
 
 renderScoreList();
 renderForm();
