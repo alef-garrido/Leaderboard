@@ -88,6 +88,13 @@ main {
   justify-items: center;
 }
 
+.header {
+  display: flex;
+  margin: 0 3em;
+}
+.header > h2 {
+  margin: 0 1em;
+}
 #scoreList {
   margin: 0 3em;
   grid-column-start: 1;
