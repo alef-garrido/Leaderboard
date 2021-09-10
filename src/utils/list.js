@@ -4,7 +4,7 @@ const container = document.getElementById('scoreList');
 
 const header = `
 <div class="header">
-  <h2>Recent Scores</h2>
+  <h3>Recent Scores</h3>
   <button id="refresh" class="btn btn-secondary" >Refresh</button>
 </div>
 `;

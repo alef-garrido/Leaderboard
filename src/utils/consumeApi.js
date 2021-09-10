@@ -28,7 +28,7 @@ export default class consumeAPI {
           const div = document.createElement('div');
           div.className = 'alert alert-dismissible alert-success';
           div.appendChild(document.createTextNode(postData.result));
-          const container = document.getElementById('addScore');
+          const container = document.getElementById('add-Score');
           container.insertAdjacentElement('beforeend', div)
 
           setTimeout(() => document.querySelector('.alert').remove(), 3000);

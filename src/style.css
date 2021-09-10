@@ -76,7 +76,8 @@ select {
 /* End of resets */
 
 #pageTitle {
-  margin: 1em 0 0 1em;
+  margin: 1em 0 2em 0;
+  text-align: center;
 }
 
 main {
@@ -92,6 +93,7 @@ main {
   display: flex;
   margin: 0 3em;
   justify-content: space-around;
+  align-items: center;
 }
 
 .header > h2 {
@@ -114,6 +116,10 @@ main {
 #addScore {
   grid-column-start: 2;
   grid-column-end: 3;
+  width: 80%;
+}
+
+#add-Score {
   width: 80%;
 }
 
