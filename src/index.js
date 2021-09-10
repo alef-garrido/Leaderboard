@@ -4,14 +4,13 @@ import renderForm from './utils/form';
 import consumeAPI from './utils/consumeApi.js'
 
 
-
 renderScoreList();
 renderForm();
 
 
 const refreshBtn = document.getElementById('refresh')
 refreshBtn.addEventListener('click', () => {
-  console.log(consumeAPI.myRequestGet())
+  consumeAPI.myRequestGet().then(value => console.log(value))
 })
 
 const postDataForm = document.querySelector('.addScore')
@@ -21,3 +20,4 @@ postDataForm.addEventListener('click', (e) => {
   let score = e.target.parentElement[1].value
   consumeAPI.myRequestPost(user, score)
 })
+
