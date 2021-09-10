@@ -22,6 +22,19 @@ export default class consumeAPI {
     try {
       const postData = await apiActions.sendData(`${API}games/${this.reqId}/scores/`, user, score);
       this.reqStat = postData.result;
+
+
+        function successAlert() {
+          const div = document.createElement('div');
+          div.className = 'alert alert-dismissible alert-success';
+          div.appendChild(document.createTextNode(postData.result));
+          const container = document.getElementById('addScore');
+          container.insertAdjacentElement('beforeend', div)
+
+          setTimeout(() => document.querySelector('.alert').remove(), 3000);
+        }
+        successAlert()
+
     } catch (err) {
       console.error(err);
     }

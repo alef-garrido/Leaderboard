@@ -124,12 +124,13 @@ main {
   padding: 0;
   margin: 2em;
   list-style: none;
-  border: gray solid 1px;
+  border: rgba(91, 98, 244, 0.75) solid 3px;
   overflow: auto;
 }
 
 .scores > li:nth-child(odd) {
-  background-color: grey;
+  background-color: #7b8ab8;
+  color: antiquewhite;
 }
 
 form {
@@ -140,4 +141,8 @@ form {
 
 input {
   margin-bottom: 1em;
+}
+
+li {
+  padding: 0 1em;
 }
