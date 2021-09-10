@@ -91,28 +91,35 @@ main {
 .header {
   display: flex;
   margin: 0 3em;
+  justify-content: space-around;
 }
+
 .header > h2 {
   margin: 0 1em;
 }
+
 #scoreList {
   margin: 0 3em;
   grid-column-start: 1;
   grid-column-end: 2;
   width: 100%;
   height: 50vh;
-  
+}
+
+.score-list {
+  display: flex;
+  justify-content: center;
 }
 
 #addScore {
   grid-column-start: 2;
   grid-column-end: 3;
-  width: 50%;
+  width: 80%;
 }
 
 .scores {
   display: block;
-  width: 100%;
+  width: 75%;
   height: 50vh;
   padding: 0;
   margin: 2em;
@@ -126,6 +133,7 @@ main {
 }
 
 form {
+  margin: 1em 0 0 0;
   display: flex;
   flex-direction: column;
 }
