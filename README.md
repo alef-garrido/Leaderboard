@@ -3,12 +3,12 @@
 # Leaderboard
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
+![screenshot](./src/assets/Screenshot.png)
 ## Project Goals 
   
   Demonstrate ability to:
     Understand how to use medium-fidelity wireframes to create a UI.
 
-    ![screenshot](./src/assets/Screenshot.png)
 
 ## Built With
 
