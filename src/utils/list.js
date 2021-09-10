@@ -10,10 +10,6 @@ const header = `
 const listMarkup = `
 <div class="score-list">
   <ul class="scores">
-    <li>Score 1</li>
-    <li>Score 2</li>
-    <li>Score 3</li>
-    <li>Score 4</li>
   </ul>
 </div>
 `;

@@ -2,10 +2,10 @@ const container = document.getElementById('addScore');
 
 const addForm = `
 <h2>Add your Score</h2>
-  <form action="#">
-    <input type="text" placeholder="Your name">
-    <input type="text" placeholder="Your score">
-    <input type="button" value="Submit">
+  <form id="addScore">
+    <input type="text" name="user" placeholder="Your name">
+    <input type="text" name="score" placeholder="Your score">
+    <input  class="addScore" type="button" value="submit">
    </form>
 `;
 const renderForm = () => {
