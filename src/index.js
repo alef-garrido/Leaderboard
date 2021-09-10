@@ -17,12 +17,12 @@ refreshBtn.addEventListener('click', () => {
   populateList();
 });
 
-const postDataForm = document.querySelector('.addScore');
-postDataForm.addEventListener('click', (e) => {
+const postDataForm = document.querySelector('#addScore');
+postDataForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const user = e.target.parentElement[0].value;
-  const score = e.target.parentElement[1].value;
+  const user = e.target[0].value;
+  const score = e.target[1].value;
   consumeAPI.myRequestPost(user, score);
-  e.target.parentElement[0].value = '';
-  e.target.parentElement[1].value = '';
+  e.target[0].value = '';
+  e.target[1].value = '';
 });

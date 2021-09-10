@@ -76,7 +76,8 @@ select {
 /* End of resets */
 
 #pageTitle {
-  margin: 1em 0 0 1em;
+  margin: 1em 0 2em 0;
+  text-align: center;
 }
 
 main {
@@ -92,6 +93,7 @@ main {
   display: flex;
   margin: 0 3em;
   justify-content: space-around;
+  align-items: center;
 }
 
 .header > h2 {
@@ -117,6 +119,10 @@ main {
   width: 80%;
 }
 
+#add-Score {
+  width: 80%;
+}
+
 .scores {
   display: block;
   width: 75%;
@@ -124,12 +130,17 @@ main {
   padding: 0;
   margin: 2em;
   list-style: none;
-  border: gray solid 1px;
+  border: rgba(91, 98, 244, 0.75) solid 3px;
   overflow: auto;
 }
 
+li {
+  padding: 0 1em;
+}
+
 .scores > li:nth-child(odd) {
-  background-color: grey;
+  background-color: #7b8ab8;
+  color: antiquewhite;
 }
 
 form {
