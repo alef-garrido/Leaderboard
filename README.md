@@ -3,10 +3,12 @@
 # Leaderboard
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
+![screenshot](./src/assets/Screenshot.png)
 ## Project Goals 
   
   Demonstrate ability to:
     Understand how to use medium-fidelity wireframes to create a UI.
+
 
 ## Built With
 
@@ -20,15 +22,9 @@ The leaderboard website displays scores submitted by different players. It also 
 To get a local copy running follow this steps!
 
 - Clone this repo.
-- npm install to install the packages
-- npm run start to build dist files and run local server.
-- Run tests
+-  ``` npm install ``` to install the packages
+- ``` npm run start ``` to build dist files and run local server.
 
-To run the test just use the following command!
-
-```
-  npm test
-```
 
 You are good to go! 
 
