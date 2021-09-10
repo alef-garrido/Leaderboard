@@ -1,4 +1,7 @@
+import Storage from './storage';
+
 const container = document.getElementById('scoreList');
+
 
 const header = `
 <div class="header">
@@ -14,9 +17,21 @@ const listMarkup = `
 </div>
 `;
 
+
 const renderScoreList = () => {
   container.insertAdjacentHTML('afterbegin', header);
   container.insertAdjacentHTML('beforeend', listMarkup);
 };
 
-export default renderScoreList;
+const populateList = () => {
+  let scores = Storage.getFromStorage('scoreList')
+
+  const displayer = document.querySelector('.scores')
+   scores.forEach((item, index) => {
+     const listItem  = document.createElement('li')
+     listItem.innerHTML = `${item.user}: ${item.score}`
+     displayer.append(listItem)
+   })
+}
+
+export { renderScoreList, populateList };

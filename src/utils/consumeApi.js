@@ -1,8 +1,9 @@
 import apiActions from "./fetchData.js";
 
+
 const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/' 
 
-export class consumeAPI {
+export default  class consumeAPI {
   constructor () {
     this.reqId = '';
     this.reqStat = '';
@@ -35,6 +36,7 @@ export class consumeAPI {
     try {
       const getData = await apiActions.getData(`${API}games/${this.reqId}/scores/`)
       this.reqScore = getData
+
       return this.reqScore
 
     } catch(err) {
@@ -42,6 +44,6 @@ export class consumeAPI {
     }
   }
 
+
 }
 
-export default consumeAPI
