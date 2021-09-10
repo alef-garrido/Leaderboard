@@ -1,18 +1,35 @@
+import Storage from './storage';
+
 const container = document.getElementById('scoreList');
+
+const header = `
+<div class="header">
+  <h2>Recent Scores</h2>
+  <button id="refresh" >Refresh</button>
+</div>
+`;
 
 const listMarkup = `
 <div class="score-list">
   <ul class="scores">
-    <li>Score 1</li>
-    <li>Score 2</li>
-    <li>Score 3</li>
-    <li>Score 4</li>
   </ul>
 </div>
 `;
 
 const renderScoreList = () => {
-  container.insertAdjacentHTML('afterbegin', listMarkup);
+  container.insertAdjacentHTML('afterbegin', header);
+  container.insertAdjacentHTML('beforeend', listMarkup);
 };
 
-export default renderScoreList;
+const populateList = () => {
+  const scores = Storage.getFromStorage('scoreList');
+
+  const displayer = document.querySelector('.scores');
+  scores.forEach((item) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `${item.user}: ${item.score}`;
+    displayer.append(listItem);
+  });
+};
+
+export { renderScoreList, populateList };
