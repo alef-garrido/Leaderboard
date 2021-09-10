@@ -134,6 +134,10 @@ main {
   overflow: auto;
 }
 
+li {
+  padding: 0 1em;
+}
+
 .scores > li:nth-child(odd) {
   background-color: #7b8ab8;
   color: antiquewhite;
@@ -147,8 +151,4 @@ form {
 
 input {
   margin-bottom: 1em;
-}
-
-li {
-  padding: 0 1em;
 }

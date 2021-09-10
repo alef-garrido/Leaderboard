@@ -1,3 +1,5 @@
+/* eslint-disable no-inner-declarations */
+
 import apiActions from './fetchData';
 
 const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
@@ -23,18 +25,16 @@ export default class consumeAPI {
       const postData = await apiActions.sendData(`${API}games/${this.reqId}/scores/`, user, score);
       this.reqStat = postData.result;
 
+      function successAlert() {
+        const div = document.createElement('div');
+        div.className = 'alert alert-dismissible alert-success';
+        div.appendChild(document.createTextNode(postData.result));
+        const container = document.getElementById('add-Score');
+        container.insertAdjacentElement('beforeend', div);
 
-        function successAlert() {
-          const div = document.createElement('div');
-          div.className = 'alert alert-dismissible alert-success';
-          div.appendChild(document.createTextNode(postData.result));
-          const container = document.getElementById('add-Score');
-          container.insertAdjacentElement('beforeend', div)
-
-          setTimeout(() => document.querySelector('.alert').remove(), 3000);
-        }
-        successAlert()
-
+        setTimeout(() => document.querySelector('.alert').remove(), 3000);
+      }
+      successAlert();
     } catch (err) {
       console.error(err);
     }
